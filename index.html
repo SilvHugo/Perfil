@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <!-- link para icons -->
     <script src="https://kit.fontawesome.com/9ccc83461b.js" crossorigin="anonymous"></script>
-
+    
+    <!-- Link para fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
@@ -16,9 +18,9 @@
 <body>
     <header>
         <nav class="link-section">
-            <a href="#section-1" id="sobre">Sobre mim</a>
-            <a href="#section-2" id="habilidades">Habilidades</a>
-            <a href="#section-3" id="contats">Contatos</a>
+            <a href="#title" id="sobre">Sobre mim</a>
+            <a href="" id="habilidades">Habilidades</a>
+            <a href="" id="contats">Contatos</a>
         </nav>
     </header>
     <main>
@@ -26,9 +28,9 @@
             <i class="fa-solid fa-x"></i>
         </div>  
         <section id="section-1">
-            <div id="title"><h2 class="title-sobre-mim">Sobre mim</h2></div>
+            <div id="title"><h2 class="title-box" id="title-sobre-mim" >Sobre mim</h2></div>
             <div id="description">
-                <p><span>Olá, me chamo Hugo,</span> sou graduando de <strong>Sistema de Informação</strong>  na <strong>Universidade Federal da Grande Dourados(UFGD)</strong>, Desde então, eu venho me desenvolvendo </p>
+                <p><span>Olá, me chamo Hugo</span>, sou graduando em <strong>Sistema de Informação</strong> na <strong>Universidade Federal da Grande Dourados(UFGD)</strong>, curso dei inicio em 2024. Desde então, venho me desenvolvendo academicamente e pessoalmente</p>
             </div>
             <figure>
                 <img src="assets/photo.png" width="90%">
@@ -36,7 +38,7 @@
         </section>
 
         <section id="section-2">
-            <h2 class="title-habilidades">Habilidades</h2>
+            <h2 class="title-box" id="title-habilidades">Habilidades</h2>
             <div class="container-icons">
                 <div class="icons"><i class="fa-brands fa-github-alt"></i></div> 
                 <div class="icons"><i class="fa-brands fa-git-alt"></i></div>
@@ -49,15 +51,18 @@
         </section>
         <section id="section-3">
             <div class="title">
-                <h2 class="title-contatos">Contatos</h2>
+                <h2 class="title-box" id="title-contatos" >Contatos</h2>
             </div>
             
             <aside class="contato-1">
-                <i class="fa-brands fa-github"></i>
-                
+                <div class="icone"><a href="https://github.com/SilvHugo" blank__ ><i class="fa-brands fa-github" id="icons-section"></i></a></div>
+                <h3>GIT HUB</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae earum et pariatur quisquam.</p>
             </aside>
             <aside class="contato-2">
-                <i class="fa-regular fa-envelope"></i>
+                <div class="icone"><a href="mailto:hugosilvacontat@gmail.com"><i class="fa-regular fa-envelope"  id="icons-section"></i></a></div>
+                <h3>E-MAIL</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae earum et pariatur quisquam.</p>
             </aside >
         </section>
     </main>

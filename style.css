@@ -5,24 +5,7 @@
 --persian-green: #23a095ff;
 --golden-gate-bridge: #f24f1fff;}
 
-.lilita-one-regular {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.ubuntu-light {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-} 
-
-.ubuntu-bold-italic {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
+/* ========= Styking do body=========== */
 body{
     display: grid;
     font-family: "Ubuntu", sans-serif;
@@ -37,6 +20,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* ========= Styking do header=========== */
 
 header{
     font-family: "Lilita One", sans-serif;
@@ -55,7 +40,9 @@ header{
     gap: 20px;
 }
 
-#sobre, #habilidades, #contats{
+#sobre, 
+#habilidades, 
+#contats{
     width: 100px;
     text-align: center;
     color: black;
@@ -66,7 +53,9 @@ header{
     transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
     
-#sobre:hover, #contats:hover, #habilidades:hover{
+#sobre:hover, 
+#contats:hover, 
+#habilidades:hover{
     transform: translate(-5px, 4px); box-shadow: none;
 }
 
@@ -82,22 +71,27 @@ header{
     background-color: var(--persian-green);
 }
 
+/* ========= Styking da Main=========== */
+
 main{
     background-color: #ffff00;
-    display: grid;
     grid-area: main;
-    grid-template-areas: 
-    "header"
-    "section_1"
-    "section_2"
-    "section_3";
-    grid-template-rows: auto;
     width: 65%;
     margin: 0 auto;
+    gap: 30px;
     text-decoration: none;
     padding: 10px;
     border: 3px solid black;
     box-shadow: -10px 10px 0px;
+}
+
+/* ========= Styking da Main -> section 1(Sobre mim)=========== */
+#section-1{
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "description photo";
+    grid-template-rows: 0fr 1fr;
 }
 
 #X{
@@ -106,7 +100,8 @@ main{
     display: flex;
     justify-content: flex-end;
 }
-.title-sobre-mim, .title-habilidades, .title-contatos{
+
+.title-box{
     font-family: "Lilita One", sans-serif;
     font-size: 30px;
     width: 170px;
@@ -117,22 +112,13 @@ main{
     box-shadow: -5px 5px 0;
 }
 
-#section-1{
-    grid-area: section_1;
-    display: grid;
-    grid-template-areas: 
-    "title title"
-    "description photo";
-    grid-template-rows: 0fr 1fr;
-}
-
 #title{
     grid-area: title;
     display: flex;
     justify-content: center;
 }
 
-.title-sobre-mim{
+#title-sobre-mim{
     background-color: var(--medium-slate-blue);
 }
 
@@ -160,14 +146,15 @@ main{
     font-style: italic;
 }
 
+/* ========= Styking da Main -> section 2 (Habilidades)=========== */
+
 #section-2{
-    grid-area: section_2;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title-habilidades{
+#title-habilidades{
     background-color: var(--golden-gate-bridge);
 }
 
@@ -177,7 +164,7 @@ main{
     background-color:var(--neon-blue);
     padding: 10px;
     margin: 30px 0;
-    width: 60%;
+    width: 65%;
     border: 3px solid black;
     box-shadow: -5px 5px 0;
     border-radius: 10px;
@@ -189,18 +176,22 @@ main{
     align-items: center;
     font-size: 2em;
     background-color: #fffce8;
-    width: 5%;
+    width: 32px;
     padding: 10px;
     border: 3px solid;
     border-radius: 10px
 }
 
+/* ========= Styking da Main -> section 3(Contatos)=========== */
+
 #section-3{
-    grid-area: section_3;
     display: grid;
     grid-template-areas: 
     "title title"
     "contat_1 contat_2";
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .title{
@@ -209,18 +200,51 @@ main{
     justify-content: center;
 }
 
-.title-contatos{
+#title-contatos{
     align-self: center;
     background-color: var(--persian-green);
 }
 
+.contato-1, .contato-2{
+    background-color: var(--cornflower-blue);
+    border: 3px solid;
+    text-align: center;
+    box-shadow: -5px 5px 0;
+    margin-bottom: 20px;
+}
+
 .contato-1{
     grid-area: contat_1;
+    
 }
 
 .contato-2{
     grid-area: contat_2;
 }
+
+#icons-section{
+    color: black;
+    box-shadow: -5px 5px 0;
+    font-size: 2em;
+    border: 3px solid;
+    border-radius: 100%;
+    background-color: #fffce8;
+    width: 32px;
+    margin: 10px;
+    padding: 15px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.icone{
+    display: flex;
+    justify-content: center;
+}
+
+#icons-section:hover{
+    transform: translate(-5px, 4px); box-shadow: none;
+}
+
+/* ========= Styking da Main=========== */
 
 footer{
     grid-area: footer;
